@@ -1,0 +1,177 @@
+.lobby {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f6f7fb;
+  color: #172033;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 520px;
+  padding: 32px;
+  border: 1px solid #e7eaf1;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 20px 60px #17203312;
+}
+
+.card h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 16px 0;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.brand {
+  color: #5368db;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+  margin: 20px 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field input,
+.invite input {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccd3e2;
+  border-radius: 10px;
+  background: white;
+  color: #172033;
+  font: inherit;
+}
+
+.button,
+.secondary {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font: inherit;
+  font-weight: 600;
+  border: 1px solid transparent;
+}
+
+.button {
+  background: #5368db;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  border-color: #ccd3e2;
+  color: #172033;
+}
+
+.button:disabled,
+.secondary:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.button:focus-visible,
+.secondary:focus-visible,
+.field input:focus-visible,
+.invite input:focus-visible {
+  outline: 3px solid #8a9cff;
+  outline-offset: 3px;
+}
+
+.divider {
+  border-top: 1px solid #e7eaf1;
+  margin-top: 24px;
+  padding-top: 24px;
+  color: #667085;
+  font-size: 14px;
+}
+
+.small {
+  font-size: 13px;
+  color: #667085;
+  margin-top: 24px;
+}
+
+.call {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 12px 20px;
+}
+
+.invite {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #667085;
+  font-size: 12px;
+}
+
+.invite input {
+  flex: 1;
+}
+
+.meeting {
+  flex: 1;
+  min-height: 0;
+}
+
+.notice,
+.error {
+  margin: 0;
+  padding: 10px 16px;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.notice {
+  color: #243d79;
+  background: #eef3ff;
+}
+
+.error {
+  color: #a32222;
+  background: #fff0f0;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 22px;
+  }
+
+  .invite {
+    order: 4;
+    flex-basis: 100%;
+  }
+
+  .header {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .brand {
+    margin-right: auto;
+  }
+}
