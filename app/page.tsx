@@ -148,7 +148,8 @@ export default function Page() {
       <main className={styles.call}>
         <header className={styles.header}>
           <strong className={styles.brand}>
-            loopmeet
+            Chatolameet
+          
           </strong>
 
           <label className={styles.invite}>
