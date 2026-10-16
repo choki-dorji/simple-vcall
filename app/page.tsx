@@ -206,7 +206,7 @@ export default function Page() {
   return (
     <main className={styles.lobby}>
       <section className={styles.card}>
-        <p className={styles.brand}>loopmeet</p>
+        <p className={styles.brand}>chatolameet</p>
 
         <h1>Create a room. Meet together.</h1>
 
